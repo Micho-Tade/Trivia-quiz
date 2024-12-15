@@ -1,0 +1,224 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Left to right gradient */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: visible; /* Allow scrolling if necessary */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background to contrast text */
+    border-radius: 10px;
+    margin-top: 300px; /* Increased margin-top to prevent overlap with the fixed nav */
+    width: 80%;
+    max-width: 1000px;
+    border: none; /* Ensure there's no border */
+    box-shadow: none; /* Remove any shadow */
+}
+
+/* Main Title */
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Navigation Styling */
+nav {
+    background: rgba(51, 51, 51, 0.5); /* Transparent black background for the default state */
+    padding: 16px 0; /* Add space at the top of the nav */
+    position: fixed; /* Fixed positioning to always stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    align-items: center;
+    box-shadow: none; /* Remove the border/shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition for background change */
+    padding-left: 80px; /* Add some left padding to avoid overlapping with the logo */
+}
+
+/* Logo Styling */
+nav img {
+    position: absolute; /* Position logo absolutely */
+    left: 0; /* Move logo to the left */
+    top: 50%; /* Vertically center the logo */
+    transform: translateY(-50%); /* Adjust to exactly center the logo */
+    width: 120px; /* Adjust the size of the logo as needed */
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin-left: 20px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Hover color */
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background to contrast text */
+    border-radius: 10px;
+    margin-top: 100px; /* Increased margin-top to prevent overlap with the fixed nav */
+    width: 80%;
+    max-width: 1000px;
+    border: none; /* Ensure there's no border */
+    box-shadow: none; /* Remove any shadow */
+}
+
+main h2 {
+    text-align: center;
+}
+
+main h4 {
+    margin-top: 20px;
+}
+
+/* Intro Section */
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Add margin to h2 in intro section */
+.intro h2 {
+    margin-bottom: 20px; /* Adds space between h2 and paragraph */
+}
+
+/* Categories Section */
+.categories {
+    margin-top: 40px;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.categories ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Space between items */
+    margin: 0;
+    padding: 0;
+}
+
+.categories ul li {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.categories ul li:hover {
+    transform: translateY(-5px);
+    background-color: #f39c12;
+    cursor: pointer;
+    color: #fff;
+}
+
+.categories ul li:active {
+    background-color: #fff;
+    color: #f39c12;
+}
+
+/* Instructions Section */
+.instructions {
+    margin-top: 40px;
+}
+
+.instructions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.instructions p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+button {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Ordered List Styling */
+ol {
+    list-style-position: inside; /* Ensures numbers are inside the list item */
+    padding-left: 20px; /* Adds some space for the list number */
+}
+
+ol li {
+    padding-left: 10px; /* Adds consistent space between the number and text */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz Game</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="icon"
+            href="https://cdn4.iconfinder.com/data/icons/computer-games-genres/3500/trivia_quiz_answer_question_choice_cybersport_gameplay-01-1024.png"
+        />
+    </head>
+    <body>
+        <div class="quiz-container">
+            <h1>Medical Quiz</h1>
+            <div id="question-container" class="question-container">
+                <div id="question">Question Text</div>
+                <div id="answer-buttons" class="answer-buttons">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="next-button" class="next-btn" style="display: none">Next</button>
+                <button id="restart-btn" class="restart-btn">Restart</button>
+                <button id="exit-btn" class="exit-btn">Exit</button>
+            </div>
+            <div id="result" class="result">Your Score: <span id="score">0</span></div>
+        </div>
+        <footer>
+            <p>
+                &copy; 2024 Ultimate IQ Test | All Rights Reserved NO Copyright
+                <a target="_blank" href="https://github.com/Micho-Tade">Michael Tadesse</a><br />
+                <a href="/home/index.html" class="home">Back to home</a>
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

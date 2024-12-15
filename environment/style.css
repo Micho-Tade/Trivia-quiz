@@ -1,0 +1,157 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Quiz Container Styling */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.quiz-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #182848;
+}
+
+.answer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    flex: 1 1 calc(50% - 15px);
+    min-width: 120px;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* Correct and Incorrect answer styling */
+.correct {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.correct:hover {
+    background-color: #218838;
+}
+
+.incorrect:hover {
+    background-color: #c82333;
+}
+
+/* Button Styling */
+.next-btn,
+.restart-btn,
+.exit-btn {
+    background-color: #ff416c;
+    background-image: linear-gradient(315deg, #ff416c 0%, #ff4b2b 74%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    flex: 1 1 calc(33% - 10px);
+    min-width: 100px;
+}
+
+.next-btn:hover,
+.restart-btn:hover,
+.exit-btn:hover {
+    background-color: #e3304e;
+    transform: translateY(-3px);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #182848;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(135deg, #182848, #4b6cb7);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #ff416c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff4b2b;
+    text-decoration: underline;
+}
+
+footer a .home {
+    margin-top: 50em;
+}

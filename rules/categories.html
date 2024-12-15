@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Select a category to start your quiz!" />
+        <title>Choose Category - Ultimate IQ Test</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="img/Quiz-icon.jpg" />
+    </head>
+    <body>
+        <header>
+            <h1 class="main-title">Ultimate IQ Test</h1>
+            <nav>
+                <ul>
+                    <li><a target="_blank" href="/home/#home">Home</a></li>
+                    <li><a target="_blank" href="/about/index.html">About</a></li>
+                    <li><a target="_blank" href="/rules/index.html">Rules</a></li>
+                </ul>
+                <img src="img/Quiz-logo.jpg" alt="Ultimate IQ Test Logo" />
+            </nav>
+        </header>
+        <main>
+            <h2>Select a Category</h2>
+            <ul id="categories-list">
+                <li><button class="category-btn" onclick="startQuiz('science')">Advanced Science</button></li>
+                <li><button class="category-btn" onclick="startQuiz('tech')">Technology</button></li>
+                <li><button class="category-btn" onclick="startQuiz('space')">Space & Astronomy</button></li>
+                <li>
+                    <button class="category-btn" onclick="startQuiz('engineering')">Engineering & Architecture</button>
+                </li>
+                <li><button class="category-btn" onclick="startQuiz('environment')">Environmental Science</button></li>
+                <li>
+                    <button class="category-btn" onclick="startQuiz('math')">Mathematics & Logical Thinking</button>
+                </li>
+                <li><button class="category-btn" onclick="startQuiz('medical')">Medical Science & Health</button></li>
+            </ul>
+        </main>
+        <footer>
+            <p>
+                &copy; 2024 Ultimate IQ Test | All Rights Reserved NO Copyright
+                <a target="_blank" href="https://github.com/Micho-Tade">Michael Tadesse</a>
+            </p>
+        </footer>
+
+        <!-- Link to the external JavaScript file -->
+        <script src="script.js"></script>
+    </body>
+</html>
